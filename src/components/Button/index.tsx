@@ -15,8 +15,8 @@ export default function Button({
     const defaultButtonClasses = "border border-black rounded-[18px] py-2 px-2 w-20 text-xs font-medium";
 
     const colors = {
-        black: 'bg-black text-white rounded-[18px] py-2 px-2 w-20 text-xs font-medium',
-        transparent: 'bg-transparent border border-black rounded-[18px] py-2 px-2 w-20 text-xs font-medium'
+        black: 'bg-black text-white',
+        transparent: 'bg-transparent border border-black'
     }
 
     return <button className={cn(defaultButtonClasses, colors[color])}>
