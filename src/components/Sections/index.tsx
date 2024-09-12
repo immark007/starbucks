@@ -13,6 +13,8 @@ export default function SectionWithImage({
     imageUrl,
     reverseOrder = false,
     backgroundColor = '#A0C292',
+    titleColor = '#1E3932', // cor padrão para o título
+    textColor = '#1E3932'   // cor padrão para o texto
 }: {
     title: string;
     text: string;
@@ -20,6 +22,8 @@ export default function SectionWithImage({
     imageUrl: string;
     reverseOrder?: boolean;
     backgroundColor?: string;
+    titleColor?: string; // novo prop para cor do título
+    textColor?: string;  // novo prop para cor do texto
 }) {
     const defaultSectionClasses = "flex flex-col justify-between items-center mt-8 w-full lg:flex-row lg:justify-center";
     const contentClasses = "w-full flex flex-col justify-center p-8 items-center gap-4 text-center lg:w-1/2 lg:gap-8";
@@ -34,11 +38,17 @@ export default function SectionWithImage({
                 <img src={imageUrl} alt={title} className="object-cover w-full h-auto" />
             </div>
             <div className={cn(contentClasses, 'order-2 lg:order-1')}>
-                <div className="flex flex-col gap-3 text-center items-center w-full lg:w-3/4 xl:w-2/3">
-                    <h1 className="text-2xl font-medium text-[#1E3932] lg:text-5xl xl:text-6xl lg:max-w-lg xl:max-w-xl lg:leading-tight xl:leading-tight">
+                <div className="flex flex-col gap-3 text-center items-center w-full lg:w-3/4 xl:w-2/3 lg:gap-8">
+                    <h1 
+                        style={{ color: titleColor }} 
+                        className="text-2xl font-medium lg:text-5xl xl:text-6xl lg:max-w-lg xl:max-w-xl lg:leading-tight xl:leading-tight"
+                    >
                         {title}
                     </h1>
-                    <span className="text-base text-[#1E3932] md:text-lg md:max-w-md md:leading-tight">
+                    <span 
+                        style={{ color: textColor }} 
+                        className="text-base md:text-lg md:max-w-md md:leading-tight lg:text-2xl"
+                    >
                         {text}
                     </span>
                 </div>
@@ -50,4 +60,4 @@ export default function SectionWithImage({
             </div>
         </section>
     );
-}
+};

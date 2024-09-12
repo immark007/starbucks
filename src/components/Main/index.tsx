@@ -3,6 +3,8 @@ import Banner from '../../assets/img/banner.jpg'
 import Jungle from '../../assets/img/jungle.jpg'
 import Coffee from '../../assets/img/coffe.png'
 import Coockies from '../../assets/img/coockies.png'
+import UberEats from '../../assets/img/uber-eats.png'
+import Rewards from '../Rewards'
 
 export default function Main(){
     return(
@@ -15,6 +17,7 @@ export default function Main(){
             reverseOrder={false} // ou true, dependendo da ordem desejada
             backgroundColor="#A0C292"
         />
+        <Rewards />
         <SectionWithImage
             title="Find your sunny side"
             text="The Paradise Drink Starbucks Refreshers® beverage shines with pineapple and passionfruit flavors."
@@ -38,6 +41,16 @@ export default function Main(){
             imageUrl={Coockies}
             reverseOrder={false} 
             backgroundColor="#fff"
+        />
+        <SectionWithImage
+            title="Just-right choice"
+            text="Our Egg White & Roasted Red Pepper Egg Bites are tasty, protein rich and 170 calories."
+            buttonLabel="Order now"
+            imageUrl={UberEats}
+            reverseOrder={true} 
+            backgroundColor="#1E3932"
+            titleColor= "#fff"
+            textColor = "#fff"
         />
         </>
     )
