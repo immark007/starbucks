@@ -12,7 +12,7 @@ export default function Button({
     children: React.ReactNode; 
     color?: 'black' |'transparent';
 }){
-    const defaultButtonClasses = "border border-black rounded-[18px] py-2 px-2 w-20 text-xs font-medium";
+    const defaultButtonClasses = "border border-black rounded-[18px] py-2 px-2 w-24 text-xs font-medium";
 
     const colors = {
         black: 'bg-black text-white',

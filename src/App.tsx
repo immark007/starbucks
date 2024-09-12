@@ -1,4 +1,4 @@
-import Banner from './components/Banner/index.js'
+import Main from './components/Main/index.js'
 import Navbar from './components/Navbar/index.jsx'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
   return (
     <>
      <Navbar />
-     <Banner />
+     <Main />
     </>
   )
 }

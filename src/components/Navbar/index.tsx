@@ -43,7 +43,7 @@ export default function Navbar() {
 
                     <div className='md:hidden'>
                         <button onClick={toggleMenu}>
-                            <FontAwesomeIcon icon={faBars} />
+                            <FontAwesomeIcon className='text-xl' icon={faBars} />
                         </button>
                     </div>
                 </nav>
