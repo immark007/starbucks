@@ -2,6 +2,8 @@
 
 Este projeto é um clone da interface do site da Starbucks, desenvolvido utilizando **React**, **TypeScript**, **Vite** e estilizado com **Tailwind CSS**. Ele tem como objetivo reproduzir a interface de forma responsiva e moderna, aplicando boas práticas de desenvolvimento front-end.
 
+🔗 **Acesse o projeto online:** [Starbucks Clone - Deploy](https://immark007.github.io/starbucks/)
+
 ## 🚀 Tecnologias Utilizadas
 
 - ⚛️ **React** – Biblioteca para criação de interfaces de usuário.
@@ -64,3 +66,9 @@ src/
 - `npm run build`: Cria a build de produção.
 - `npm run preview`: Visualiza a build de produção localmente.
 - `npm run lint`: Executa o ESLint para checagem de problemas no código.
+
+## 🌐 Deploy
+
+O projeto está disponível online e pode ser acessado pelo seguinte link:
+
+🔗 **[Starbucks Clone - Deploy](https://immark007.github.io/starbucks/)**
