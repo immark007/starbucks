@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# ☕ Starbucks Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um clone da interface do site da Starbucks, desenvolvido utilizando **React**, **TypeScript**, **Vite** e estilizado com **Tailwind CSS**. Ele tem como objetivo reproduzir a interface de forma responsiva e moderna, aplicando boas práticas de desenvolvimento front-end.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React** – Biblioteca para criação de interfaces de usuário.
+- 🟦 **TypeScript** – Superset do JavaScript que adiciona tipagem estática.
+- ⚡ **Vite** – Build tool para desenvolvimento web rápido.
+- 🎨 **Tailwind CSS** – Framework CSS utilitário para estilização rápida e responsiva.
+- 🔍 **ESLint** – Ferramenta para análise de código e padronização.
+- 📝 **PostCSS** – Ferramenta para transformar CSS com plugins JavaScript.
 
-## Expanding the ESLint configuration
+## 📁 Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+src/
+├── assets/               # Arquivos estáticos (imagens, fontes, etc.)
+├── components/           # Componentes reutilizáveis
+│   ├── Button/           # Componente de botão
+│   │   └── index.tsx
+│   ├── Footer/           # Rodapé
+│   ├── Main/             # Componente principal
+│   ├── Navbar/           # Barra de navegação
+│   ├── Rewards/          # Seção de recompensas
+│   └── Sections/         # Outras seções da página
+├── App.tsx               # Componente principal React
+├── index.css             # Estilos globais
+├── main.tsx              # Ponto de entrada do React
+└── vite-env.d.ts         # Definições de tipos para Vite
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 💻 Como Rodar o Projeto Localmente
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/immark007/starbucks.git
+   cd starbucks
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Execute o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse o projeto:**
+   Abra o navegador e acesse: [http://localhost:5173](http://localhost:5173)
+
+## 🎨 Funcionalidades Implementadas
+
+- Interface responsiva e semelhante ao site oficial.
+- Componentização reutilizável para manutenção e escalabilidade.
+- Estilização moderna e minimalista com Tailwind CSS.
+- Configuração otimizada com Vite para rápido carregamento.
+
+## 🛠️ Scripts Disponíveis
+
+- `npm run dev`: Executa o servidor de desenvolvimento.
+- `npm run build`: Cria a build de produção.
+- `npm run preview`: Visualiza a build de produção localmente.
+- `npm run lint`: Executa o ESLint para checagem de problemas no código.
